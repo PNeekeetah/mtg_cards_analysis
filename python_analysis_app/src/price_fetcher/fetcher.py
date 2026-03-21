@@ -56,6 +56,8 @@ class PriceFetcher:
                 if filename.startswith("prices_") and filename.endswith(".json"):
                     return os.path.join(self.price_dir, filename)
             
+            print("No existing price files found, fetching new data...")
+            
         # Past this point, we know it doesn't exist, so we need to fetch it.
         
         response = self.session.get(self.base_url)
