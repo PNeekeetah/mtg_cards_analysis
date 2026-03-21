@@ -3,7 +3,6 @@ from typing import List
 from pathlib import Path
 
 from src.models.card_entry import CardEntry
-from src.parser.collection_filter import CollectionFilter
 
 COMMENT_SYMBOL = "#"
 FOIL_CARD = "foil"
@@ -70,4 +69,4 @@ class CollectionParser:
         """
         filepath = self.root / collection_name
         collection = self._parse_collection_raw(filepath)
-        return CollectionFilter.filter_duplicates(collection)
+        return collection

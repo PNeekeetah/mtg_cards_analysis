@@ -1,3 +1,5 @@
+import os
+
 import orjson
 from typing import List, Any, Set
 from src.models.scryfall_card_details import ScryfallCardDetails
@@ -63,3 +65,29 @@ class CardIndex:
             card_index.add_card(ScryfallCardDetails(**card))
 
         return card_index
+
+    def dump_index(self, output_file: str, overwrite: bool = False):
+        """
+        Dumps the card index to a file in JSON format.
+        """
+        os.makedirs(os.path.dirname(output_file), exist_ok=True)
+
+        seen_cards = set()
+        unique_cards = []
+
+        if not overwrite and os.path.exists(output_file) and os.path.getsize(output_file) > 0:
+            print(
+                "Output file already exists and is not empty. Skipping dump to avoid overwriting."
+            )
+            return
+
+        # No need for duplicates in reduced index dump
+        for card in self.cards:
+            if card.name not in seen_cards:
+                seen_cards.add(card.name)
+                unique_cards.append(card)
+
+        with open(output_file, "wb") as f:
+            f.write(
+                orjson.dumps([card.to_dict() for card in unique_cards], option=orjson.OPT_INDENT_2)
+            )

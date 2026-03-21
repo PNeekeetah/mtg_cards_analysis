@@ -43,7 +43,7 @@ htmlcov/
 
 # Generated data & cache
 prices/
-*.json
+python_analysis_app/*.json
 profile_flamegraph.html
 
 # Node (for web_app)
