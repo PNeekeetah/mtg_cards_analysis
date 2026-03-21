@@ -1,0 +1,45 @@
+Rugged Highlands, 2
+Night Market, 1
+Swiftwater Cliffs, 1
+Tranquil Cove, 1
+Radiant Grove, 1
+Wooded Ridgeline, 1
+Sacred Peaks, 1
+Swiftwater Cliffs, 3
+Scoured Barrens, 2
+Uncharted Haven, 1
+Tranquil Cove, 1
+Thornwood Falls, 1
+Blossoming Sands, 1
+Strangled Cemetery, 1
+Hidden Grotto, 1
+Lupinflower Village, 2
+Wild Roads, 2
+Lilypad Village, 1
+OakHollow Village, 1
+"Vitu-Ghazi, The City-Tree", 1
+Krosan Verge, 1
+Secluded Courtyard, 1
+Orzhov Basilica, 1
+Rocky Roads, 1
+Mudflat Village, 1
+Rockface Village, 1, foil
+Mystic Monastery, 1, foil
+Hidden Courtyard, 1, foil
+Uncharted Haven, 1, foil
+Peculiar Lighthouse, 1, foil
+Terramorphic Expanse, 1, foil
+Neglected Manor, 1, foil
+"Gohn, Town of Ruin", 1, foil
+"Vector, Imperial Capital", 1, foil
+"Insomnia, Crown City", 1, foil
+"Treno, Dark City", 1, foil
+Thornwood Falls, 1, foil
+Tranquil Cove, 1, foil
+Jungle Hollow, 1, foil
+Thornwood Falls, 1, foil
+Wind-scarred Crag, 1, foil
+Dismal Backwater, 1, foil
+Blossoming Sands, 1, foil
+Jungle Hollow, 1, foil
+Bloodfell Caves, 2, foil

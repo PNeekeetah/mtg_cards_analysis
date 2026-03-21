@@ -1,0 +1,771 @@
+# 2013
+
+## Water
+
+Annul, 3
+Stymied Hopes, 3
+Nimbus Naiad, 2
+Coastline Chimera, 3
+Fate Foretold, 4
+Thassa's Bounty, 8
+Crackling Triton, 6
+Mnemonic Wall, 12
+Wavecrash Triton, 6
+Breaching Hippocamp, 6
+Vaporkin, 4
+Omenspeaker, 9
+Voyage's End, 5
+Benthic Giant, 3
+Lost in Labyrinth, 4
+Prescient Chimera, 6
+Griptide, 5
+Triton Shorthief, 8
+
+## Swamp
+
+Disciple of Phenax, 5
+Returned Phalanx, 4
+Cavern Lampad, 3
+Blood-Toll Harpy, 3
+Sip of Hemlock, 3
+Lash of Whip, 2
+Loathsome Catoblepas, 2
+Boon of Erebos, 2
+Scourgemark, 1
+Felhide Minotaur, 1
+Pharika's Cure, 1
+
+# 2014
+
+## Water
+
+Triton Shorestalker, 1
+
+## Plain
+
+Mortal Obstinacy, 2
+Oppressive Rays, 2
+Armament of Nyx, 1
+Harvestguard Alseids, 1
+Ajani's Presence, 1
+Font of Vigor, 1
+Oreskos Swiftclaw, 1
+
+
+## Swamp
+
+Returned Reveler, 3
+Bloodcrazed Hoplite, 2
+Cast into Darkness, 1
+Necrobite, 1
+Pharika's Chosen, 1
+
+## Mountain
+
+Sigiled Skink, 4
+Pensive Minotaur, 1
+Starfall, 3
+Magma Spray, 1
+Bladetusk Boar, 5
+Lightning Diadem, 3
+Flurry of Horns, 3
+Satyr Hoplite, 2
+
+## Forest
+
+Kruphix's Insight, 1
+Pheres-Band Thunderhoof, 2
+Humbler of Mortals, 2
+Font of Fertility, 2
+Ravenous Leucrocota, 3
+Nature's Panoply, 4
+Market Festival, 4
+
+# 2015
+
+## Swamp
+Mire's Malice, 4
+Dominator Drone, 4
+Kozilek's Channeler, 2
+Mind raker, 3
+Bone Splinters, 2
+Culling Drone, 5
+Mortuary Mire, 5
+Nirkana Assassin, 3
+Swarm Surge, 3
+Kalastria Nightwatch, 2
+Geiserfield Stalker, 4
+Kalastria Healer, 2
+Voracious Null, 2
+Silent Skimmer, 1
+Complete Disregard, 2
+Demon's Grasp, 1
+Grave Birthing, 1
+Dutiful Return, 1
+Sludgecrawler, 1
+
+## Mountain
+
+Boiling Earth, 2
+Ondu Champion, 2
+Volcanic Upheaval, 2
+Stonefury, 7
+Sure Strike, 3
+Touch of the Void, 1
+Goblin War Paint, 2
+Kozilek's Sentinel, 3
+Lavastep Raider, 4
+Shatter Skull Recruit, 3
+Vestige of Emrakul, 5
+Valakut Invoker, 6
+Looming Spires, 2
+Outnumber, 3
+Nettle Drone, 3
+
+## Water
+
+Murk Strider, 1
+Skyline Cascade, 1
+Anticipate, 1
+Eldrazi Skyspawner, 1
+Tightening Coils, 1
+Mist Intruder, 1
+Oracle of Dust, 4
+Wave-Wing Elemental, 2
+Salvage Drone, 1
+Dispel, 3
+Spell Shrivel, 2
+Rush of Ice, 4
+Roilmage's Trick, 2
+Cloud Manta, 2
+Benthic Infiltrator, 3
+Incubator Drone, 2
+Brilliant Spectrum, 2
+Coralhelm Guide, 2
+
+## Forest
+
+Reclaiming Vines, 5
+Giant Mantis, 2
+Fertile Thicket, 1
+Call the Scions, 4
+Eyeless Watcher, 2
+Territorial Baloth, 5
+Plummet, 2
+Tajuru Beastmaster, 2
+Natural Connection, 5
+Lifespring Druid, 1
+Giant Mantis, 1
+Oran-Rief Invoker, 3
+Seek the Wilds, 5
+Broodhunter Wyrm, 3
+Blisterpod, 2
+Swell of Growth, 2
+Snapping Gnarlid, 1
+Earthen Arms, 2
+
+## Plain
+
+Ondu Greathorn, 2
+Shadow Glider, 2
+Makindi Patrol, 2
+Gideon's Reproach, 3
+Kitesail Scout, 2
+Kor Castigator, 2
+Courier Griffin, 3
+Sheer Drop, 3
+Lithomancer's Focus, 3
+Felidar Cub, 3
+Ghostly Sentinel, 2
+Smite the Monstrous, 2
+Fortified Rampart, 3
+Angelic Gift, 1
+Inspired Charge, 1
+Tandem Tactics, 1
+Stone Haven Medic, 1
+
+## Colorless
+
+Scour from Existence, 5
+Eldrazi Devastator, 1
+Ruin Processor, 1
+Hedron Blade, 1
+
+# 2016
+
+## Plains
+
+Fragmentize, 2
+Built to last, 2
+Herald of the fair, 1
+Skyswirl Harrier, 2
+Ninth Bridge Patrol, 3
+Inspired Charge, 1
+Tasseled Dromedary, 1
+Glint-Sleeve Artisan, 1
+Eddytrail Hawk, 1
+Pressure Point, 1
+
+## Colorless
+
+Metalspinner's Puzzleknot, 1
+Skyskiff, 1
+Glassblower's Puzzleknot, 1
+Prosthetic Prism, 1
+Aradara Express, 1
+Renegade Freighter, 1
+Accomplished Automaton, 1
+Consulate Skygate, 1
+Fireforger's Puzzleknot, 2
+Nanam Cobra, 2
+Bastion Mastodon, 1
+Dukhara Peafowl, 1
+Woodweaver's Puzzleknot, 1
+
+## Forest
+
+Appetite for the Unnatural, 2
+Peema Outrider, 2
+Ornamental Courage, 2
+Cowled Prowler, 1
+Wily Bandar, 1
+Thriving Rhino, 1
+Attune with Aether, 1
+
+## Mountain
+
+Renegade Tactics, 2
+Reckless Fireweaver, 2
+Built to Smash, 1
+Ruinous Gremlin, 2
+Spontaneous Artist, 1
+Giant Spectacle, 1
+Chandra's Pyrohelix, 1
+Demolish, 1
+
+## Swamp
+
+Tidy Conclusion, 1
+Die Young, 1
+Ambitious Aetherborn, 1
+Lawless Broker, 1
+Live Fast, 1
+Thriving Rats, 1
+Dukhara Scavenger, 4
+Foundry Screecher, 2
+
+## Water
+
+Nimble Innovator, 2
+Curio Vendor, 2
+Vedalken Blademaster, 1
+Gearseeker Serpent, 1
+Aether Theorist, 1
+Tezzeret's Ambition, 1
+Aether Tradewinds, 1
+
+# 2017
+
+## Mountain
+
+Frenzied Raptor, 2
+Unfriendly Fire, 6
+Rile, 2
+Fathom Fleet Firebrand, 2
+Hijack, 2
+Dual Shot, 3
+Sun-Crowned Hunters, 3
+Tilonalli's Knight, 1
+Sure Strike, 1
+Firecannon Blast, 1
+Rumbling Goblin, 1
+Scorched Rusalka, 1
+Brazen Buccaneers, 1
+Demolish, 1
+
+## Forest
+
+Deeproot Warrior, 3
+Spike-Tailed Ceratops, 2
+Crushing Canopy, 1
+Colossal Dreadmaw, 1
+Pounce, 1
+Ravenous Daggertooth, 1
+Blinding Fog, 1
+Tishana's Wayfinder, 1
+Ancient Brontodon, 1
+
+## Water
+
+Headwater Sentries, 3
+Depths of Desire, 4
+One with the Wind, 2
+Prosperous Pirates, 2
+Opt, 1
+Spellpierce, 1
+Shore keeper, 1
+Shaper Apprentice, 1
+Watertrap Weaver, 1
+Wind strider, 1
+Run Aground, 1
+
+## Swamp
+
+Deadeye Tormentor, 3
+Dire Fleet Hoarder, 2
+Spreading Rot, 2
+March of the Drowned, 2
+Duress, 1
+Mark of the Vampire, 1
+Vanquish the Weak, 1
+Skulduggery, 1
+Anointed Deacon, 1
+Skymarch Bloodletter, 1
+Carrion Screecher, 1
+Bone Splinters, 1
+Mortician Beetle, 1
+Grisly Spectacle, 1
+Blight Keeper, 1
+Dire Fleet Interloper, 1
+Fathom Fleet Cutthroat, 1
+
+## Plains
+
+Raptor Companion, 3
+Slash of Talons, 3
+Pterodon Knight, 2
+Shining Aerosaur, 2
+Bishop's Soldier, 2
+Legion's Judgment, 1
+Ritual of Rejuvenation, 1
+Territorial Hammerskull, 1
+Vampire's Zeal, 1
+Legion Conquistador, 1
+Demystify, 1
+
+## Colorless
+
+Hierophant's Chalice, 1
+Gilded Sentinel, 1
+
+# 2018
+
+## Multicolor
+
+Conclave Cavalier, 2
+Conclave Guildmage, 2
+Swarm Guildmage, 2
+Statues, Statue, 2
+Ochran Assassin, 1
+
+
+## Mountain
+
+Smelt-Ward minotaur, 1
+
+## Water
+
+Bound Phantasm, 2
+Citywatch Sphinx, 2
+Murmuring Mystic, 1
+Sinister Sabotage, 1
+
+## Forest
+
+Might of the masses, 1
+Golgari raiders, 1
+
+## Plains
+
+Sunhome stalwart, 1
+demotion, 1
+crush contraband, 1
+gird for battle, 2
+
+## Swamp
+Pilfering Imp, 2
+
+### 22 Uncommons
+
+# 2019
+
+## Mountain
+
+Blindblast , 2
+Spellgorger Weird, 1
+Jaya's Greeting, 1
+
+## Water
+
+Aven Eternal, 3
+Kasmina's Transmutation, 2
+Thunder drake, 1
+Teferi's Time Twist, 1
+Erratic Visionary, 1
+Totally Lost, 1
+Spellkeeper Weird, 1
+Contentious Plan, 1
+Wall of Runes, 1
+Stealth Mission, 1
+Callous Dismissal, 1
+
+## Swamp
+
+Charity Extractor, 2
+Davriel's Shadowfugue, 2
+Ob Nixilis's Cruelty, 2
+Lazotep Behemoth, 2
+Shriekdiver, 2
+Herald of the Dreadhorde, 1
+Lazotep Reaver, 2
+Tithebearer Giant, 2
+Unlikely Aid, 2
+Aid the Fallen, 1
+Vraska's Finisher, 2
+Toll of the Invasion, 1
+
+# 2020
+
+## Mountain
+
+Scavenged Blade, 1
+Expedition Champion, 1
+Teeterpeek Ambusher, 2
+
+## Water
+
+Tazeem Roilmage, 1
+Shell Shield, 1
+
+## Colorless
+
+Skyclave Sentinel, 1
+
+## Forest
+
+Scale the Heights, 1
+Murasa Brute, 1
+Gnarlid Colony, 1
+
+## Plains
+
+Shepherd of Heroes, 1
+Tazeem Raptor, 1
+
+## Swamp
+
+Expedition Skulker, 1
+Highborn Vampire, 1
+
+# 2021
+
+## Multicolor
+
+Seedpod Squire, 1
+Ravenous Squirrel, 1
+Rakdos Headliner, 2
+Ethersworn Sphinx, 2
+Combine Chrysalis, 4
+Lazotep Chancellor, 3
+Arcbound Shikari, 1
+Arcus Acolyte, 1
+Graceful Restoration, 2
+Prophetic Titan, 2
+
+## Mountain
+
+Mogg Salvage, 2
+Goblin Traprunner, 2
+Flametongue Yearling, 1
+Flame Blitz, 1
+Flame Rift, 1
+Spreading Insurrection, 1
+Blazing Rootwalla, 1
+Cinderheart Giant, 1
+Vault Robber, 1
+Run Amok, 1
+Fearless Pup, 1
+Demon Bolt, 1
+Nahiri's Sacrifice, 1
+Hobgoblin Captain, 1
+Goblin Javelineer, 1
+
+## Water
+
+Charmed sleep, 5
+Rimeshield Frost Giant, 3
+Shocking Grasp, 2
+You come to a river, 3
+Contact Other Plane, 5
+Pixie Guide, 4
+Shortcut Seeker, 5
+Bar the Gate, 2
+You find the villain's lair, 3
+Scion of Stygia, 3
+Soulknife Spy, 3
+Secret Door, 3
+Air-Cult Elemental, 3
+Mordenkainen's Polymorph, 4
+You see a guard approach, 3
+Shocking Grasp, 2
+Djinni Windseer, 1
+Arcane Investigator, 1
+Silver Raven, 1
+Clever Conjurer, 1
+Raving Visionary, 2
+Vedalken Infiltrator, 3
+Sea Drake, 5
+Filigree Attendant, 3
+Mystic Redaction, 4
+Sweep the Skies, 3
+Seal of Removal, 2
+Said / done, 1
+Specimen Collector, 1
+Ghost-Lit Drifter, 1
+Lucid Dreams, 1
+Scuttletide, 1
+Littjara Kinseekers, 2
+Mistwalker, 2
+Karfell Harbinger, 1
+Pilfering Hawk, 1
+Run Ashore, 1
+Frostpeak Yeti, 1
+Brinebarrow Intruder, 1
+
+## Colorless
+
+Monoskellion, 2
+Sanctuary Raptor, 2
+Vectis Gloss, 2
+Scorn Effigy, 2
+Batterbone, 2
+Millikin, 4
+Extruder, 2
+Brainstone, 2
+Altar of the Goyf, 1
+Steel Dromedary, 1
+Raven Wings, 1
+Funeral Longboat, 1
+Great Axe, 1
+Barbed Spike, 1
+
+## Forest
+
+Hunting Pack, 1
+Foundation Breaker, 1
+Territorial Baloth, 1
+Fae Offering, 1
+Yavimaya Elder, 2
+Terramorph, 3
+Squirrel Sovereign, 2
+Fertile Thicket, 2
+Glinting Creeper, 3
+Wren's Run Hydra, 2
+Blessed Respite, 2
+
+## Plains
+
+Mishra's Factory, 2
+Glorious Enforcer, 3
+Blossoming Calm, 2
+Soul Snare, 2
+Healer's Flock, 2
+Abiding Grace, 2
+Scour the Desert, 3
+Seal of Cleansing, 1
+Arcbound Javelineer, 2
+Skyblade's Boon, 2
+Gavony Silversmith, 1
+
+Minimus Containment, 2
+Ranger's Hawk, 2
+Potion of Healing, 2
+Paladin's Shield, 3
+You hear something on watch, 2
+Cloister Gargoyle, 4
+Gloomstalker, 3
+You're ambushed on the road, 1
+Veteran Dungeoneer, 1
++2 Mace, 1
+Dwarfhold Champion, 1
+Delver's Torch, 1
+Dawnbringer Cleric, 1
+Half-Elf Monk, 1
+Planar Ally, 2
+
+## Swamp
+
+Hired Hexblade, 2
+Clattering Skeletons, 1
+Zombie Ogre, 1
+Sepulcher Ghoul, 1
+Fate's Reversal, 1
+Grim Bounty, 1
+Young Necromancer, 4
+Radiant Epicure, 2
+Greed, 2
+Feast of Sanity, 2
+Sudden Edict, 1
+Flay Essence, 1
+Skirge Familiar, 1
+Necromancer's Familiar, 1
+Bone Shredder, 1
+Ravenous Necrotitian, 1
+Jarl Of the Forsaken, 4
+Draugr Recruiter, 3
+Priest of the Haunted Edge, 3
+Dread Rider, 5
+Infernal Pet, 3
+Deathknell Berserker, 2
+Grim Draugr, 3
+Dogged Pursuit, 4
+Weigh Down, 2
+Feed the Serpent, 1
+Koma's Faithful, 1
+Karfell Kennel-Master, 1
+Skull raid, 1
+Duskwielder, 1
+Demonic Gifts, 1
+
+### 132 Uncommons
+
+# 2022
+
+## Mountain
+
+Akki Ronin, 2
+Scrapyard Steelbreaker, 1
+Peerless Samurai, 1
+Unstoppable Ogre, 1
+
+## Water
+
+Mindstone's Animation, 2
+Third Path Savant, 2
+Mnemonic Sphere, 1
+Desynchronize, 1
+Lat-Nam Adept , 1
+
+## Colorless
+
+## Forest
+
+Tales of Master Seshiro, 1
+Fang of Shigeki, 1
+Master's Rebuke, 1
+Coiling Stalker, 1
+
+## Plains
+
+Ancestral Katana, 1
+Seven-Tail Mentor, 1
+Mothrider Patrol, 1
+Repel the Vile, 1
+Imperial Oath, 1
+Eiganjo Exemplar, 1
+Sunblade Samurai, 1
+
+## Swamp
+
+Moment of Defiance, 2
+Gixian Skullflayer, 2
+Carrion Locust, 2
+Disfigure, 1
+Emergency Weld, 1
+Ashnod's Intervention, 1
+Mukotai Ambusher, 1
+Virus Beetle, 1
+Gix's Caress, 1
+Killzone Acrobat, 1
+
+
+# 2023
+
+## Mountain
+
+Nahiri's Sacrifice, 1
+Urabrask's Anointer, 1
+
+## Water
+
+Unctus retrofitter, 1
+Watchful Blisterzoa, 1
+Saiba Cryptomancer, 1
+Tamiyo's Logbook, 1
+Thunderhead Squadron, 1
+Halo-Charged Skaab, 1
+Atmosphere Surgeon, 1
+Expedition Lookout, 1
+Stasis Field, 1
+Disturbing Conversion, 1
+Transplant Theorist, 1
+
+## Colorless
+
+Myr Convert, 2
+
+## Forest
+
+Venomous Brutalizer, 1
+Ent's Fury, 1
+Unnatural Restoration, 1
+
+## Plains
+
+Invasion of Belenon, 1
+Hobbit's Sting, 1
+Against All Odds, 1
+Veil of Assimilation, 1
+Alabaster Host Intercessor, 1
+Swordsworn Cavalier, 1
+Resistance Reunited, 1
+Tarkir Duneshaper, 2
+
+## Swamp
+
+### 15 uncommons
+
+# 2024
+
+## Mountain
+
+Kindlespark Duo, 1
+Sazacap's Brew, 1
+
+## Water
+
+Underwater Tunnel / Slimy Aquarium, 1
+Mindspiral, 1
+Pearl of Wisdom, 1
+
+## Colorless
+
+Three Tree Mascot, 1
+
+## Forest
+
+Bakersbane Duo, 1
+Longstalk Brawl, 1
+Pond Profet, 1
+
+## Plains
+
+Lifecreed Duo, 1
+Thistledown Players, 1
+Pileated Provisioner, 1
+
+## Swamp
+
+Daggerfang Duo, 1
+Starlit Soothsayer, 1
+
+# 2025
+
+## Colorless
+
+Hot Dog Cart, 1
+
+## Plains
+
+Skyward Spider, 2
+Spectacular Tactics, 2
