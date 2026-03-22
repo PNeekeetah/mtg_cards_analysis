@@ -71,7 +71,7 @@ img:hover {
 }
 #cardContainer {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
 }
 #cardRating {
@@ -83,6 +83,33 @@ img:hover {
   font-size: 18px;
   min-width: 40px;
   text-align: center;
+}
+#ratingGuide {
+  max-width: 420px;
+  background: #2d2d2d;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 15px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+#ratingGuide h3 {
+  margin-top: 0;
+  color: #ffd700;
+}
+#ratingGuide table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+#ratingGuide td {
+  padding: 4px 6px;
+  vertical-align: top;
+}
+#ratingGuide td:first-child {
+  font-weight: bold;
+  color: #ffd700;
+  width: 25px;
 }
 #cardInfo {
   text-align: center;
@@ -153,15 +180,59 @@ button:hover {
     <h2>Cards Remaining</h2>
     <div id="statsList"></div>
   </div>
+
   <div id="content">
     <div id="cardInfo">
       <div id="cardName"></div>
       <div id="cardType"></div>
     </div>
+
     <div id="cardContainer">
       <img id="cardImg" />
       <div id="cardRating">U</div>
+
+      <div id="ratingGuide">
+        <h3>Rating Guide</h3>
+
+        <div><strong>Game moments:</strong> Winning, Ahead, Balanced, Behind, Losing</div>
+
+        <table>
+          <tr>
+            <td>S</td>
+            <td><strong>Game-breaking (4–5).</strong> Excels in multiple game moments. Often central to a deck’s strategy.</td>
+          </tr>
+          <tr>
+            <td>A</td>
+            <td><strong>Great (2–3).</strong> Strong support cards that work well with others.</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><strong>Solid (1).</strong> Immediate value in one key game moment.</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><strong>Fair (0–1).</strong> Average value, rarely game-changing.</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><strong>Poor (0).</strong> Situational or needs archetype support.</td>
+          </tr>
+          <tr>
+            <td>E</td>
+            <td><strong>Trash (0).</strong> Usually a liability.</td>
+          </tr>
+        </table>
+
+        <strong>Evaluation Factors</strong>
+
+        <div><strong>Mana cost</strong> – Expensive cards must justify their impact.</div>
+        <div><strong>Mana complexity</strong> – Fewer color requirements are better.</div>
+        <div><strong>Effect complexity</strong> – How much the board state changes.</div>
+        <div><strong>Keywords</strong> – Quantity and usefulness of abilities.</div>
+        <div><strong>Stats</strong> – Balance relative to mana cost.</div>
+      </div>
     </div>
+
     <div id="ratingButtons">
       <button class="rating-btn" onclick="rate('S')">S<kbd>1</kbd></button>
       <button class="rating-btn" onclick="rate('A')">A<kbd>2</kbd></button>
@@ -170,11 +241,14 @@ button:hover {
       <button class="rating-btn" onclick="rate('D')">D<kbd>5</kbd></button>
       <button class="rating-btn" onclick="rate('E')">E<kbd>6</kbd></button>
     </div>
+
     <button onclick="skip()">Skip</button>
     <button onclick="prev()">Back</button>
+
     <div id="progress"></div>
   </div>
 </div>
+
 <script src="app.js"></script>
 </body>
 </html>
