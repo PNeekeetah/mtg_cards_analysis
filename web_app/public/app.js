@@ -31,7 +31,7 @@ function sortCards(cards) {
 }
 
 function toTitleCase(str) {
-  return str.toLowerCase().replace(/\\b\\w/g, l => l.toUpperCase());
+  return str.toLowerCase().replace(/\b\w/g, l => l.toUpperCase());
 }
 
 async function init() {

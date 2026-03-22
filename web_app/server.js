@@ -152,8 +152,8 @@ function buildCardStats(cards, ratings) {
     const { card, grade } = req.body;
     updateRating(ratings, card, grade);
     // Rebuild stats after rating update
-    const updatedStats = buildCardStats(cards, ratings);
-    res.json({ ok: true, stats: updatedStats });
+    stats = buildCardStats(cards, ratings);
+    res.json({ ok: true, stats });
   });
 
   console.log("Server starting on port 3000");
