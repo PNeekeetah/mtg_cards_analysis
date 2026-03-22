@@ -3,10 +3,32 @@ let ratings = {};
 let stats = [];
 let cardList = []; // all cards
 let currentIdx = 0;
-let ratingHistory = [];
 
 const GRADE_TO_KEY = { 'S': '1', 'A': '2', 'B': '3', 'C': '4', 'D': '5', 'E': '6' };
 const KEY_TO_GRADE = { '1': 'S', '2': 'A', '3': 'B', '4': 'C', '5': 'D', '6': 'E' };
+
+function getColorKey(colors) {
+  if (!colors || colors.length === 0) return "C"; // colorless
+  return colors.sort().join("");
+}
+
+function sortCards(cards) {
+  return Object.keys(cards).sort((a, b) => {
+    const cardA = cards[a];
+    const cardB = cards[b];
+    
+    // First by color identity
+    const colorA = getColorKey(cardA.colors);
+    const colorB = getColorKey(cardB.colors);
+    if (colorA !== colorB) return colorA.localeCompare(colorB);
+    
+    // Then by type
+    if (cardA.type !== cardB.type) return cardA.type.localeCompare(cardB.type);
+    
+    // Then by mana cost
+    return cardA.cmc - cardB.cmc;
+  });
+}
 
 function toTitleCase(str) {
   return str.toLowerCase().replace(/\\b\\w/g, l => l.toUpperCase());
@@ -20,8 +42,8 @@ async function init() {
   cards = data.cards;
   stats = data.stats;
 
-  // Build list of unrated cards
-  cardList = Object.keys(cards).sort(() => Math.random() - 0.5);
+  // Build sorted list of all cards
+  cardList = sortCards(cards);
   currentIdx = 0;
   
   updateUI();
@@ -99,7 +121,6 @@ function updateUI() {
 async function rate(grade) {
   const idx = findNextCard();
   const cardName = cardList[idx];
-  ratingHistory.push({ cardName, grade: ratings[cardName] });
   ratings[cardName] = grade;
 
   // Show the rating immediately
@@ -116,6 +137,7 @@ async function rate(grade) {
   // Move to next card after a short delay
   setTimeout(() => {
     currentIdx++;
+    if (currentIdx >= cardList.length) currentIdx = 0; // loop back
     updateUI();
   }, 500);
 }
@@ -126,10 +148,8 @@ function skip() {
 }
 
 function prev() {
-  if (!ratingHistory.length) return;
-  const last = ratingHistory.pop();
-  ratings[last.cardName] = last.grade;
-  currentIdx = cardList.indexOf(last.cardName);
+  currentIdx--;
+  if (currentIdx < 0) currentIdx = cardList.length - 1;
   updateUI();
 }
 
