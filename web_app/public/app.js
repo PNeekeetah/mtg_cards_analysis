@@ -1,12 +1,16 @@
 let cards = {};
 let ratings = {};
-let buckets = {};
-let bucketKeys = [];
-let currentBucketIdx = 0;
-let pairHistory = [];
+let stats = [];
+let cardList = []; // all cards
+let currentIdx = 0;
+let ratingHistory = [];
 
-let leftIdx = 0;
-let rightIdx = 1;
+const GRADE_TO_KEY = { 'S': '1', 'A': '2', 'B': '3', 'C': '4', 'D': '5', 'E': '6' };
+const KEY_TO_GRADE = { '1': 'S', '2': 'A', '3': 'B', '4': 'C', '5': 'D', '6': 'E' };
+
+function toTitleCase(str) {
+  return str.toLowerCase().replace(/\\b\\w/g, l => l.toUpperCase());
+}
 
 async function init() {
   const res = await fetch("/cards");
@@ -14,87 +18,128 @@ async function init() {
 
   ratings = data.ratings;
   cards = data.cards;
-  buckets = data.buckets;
+  stats = data.stats;
 
-  bucketKeys = Object.keys(buckets);
-  if (!bucketKeys.length) return;
-
-  currentBucketIdx = 0;
-  shuffleBucket(bucketKeys[currentBucketIdx]);
-  showPair();
+  // Build list of unrated cards
+  cardList = Object.keys(cards).sort(() => Math.random() - 0.5);
+  currentIdx = 0;
+  
+  updateUI();
+  setupKeyboardShortcuts();
 }
 
-function shuffleBucket(bucketKey) {
-  const bucket = buckets[bucketKey];
-  for (let i = bucket.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [bucket[i], bucket[j]] = [bucket[j], bucket[i]];
+function findNextCard() {
+  if (currentIdx >= cardList.length) {
+    currentIdx = 0; // loop back
   }
-  leftIdx = 0;
-  rightIdx = bucket.length > 1 ? 1 : 0;
+  return currentIdx;
 }
 
-function showPair() {
-  const bucketKey = bucketKeys[currentBucketIdx];
-  const bucket = buckets[bucketKey];
-  if (bucket.length < 2) return;
+function showCard() {
+  const idx = findNextCard();
+  const cardName = cardList[idx];
+  const card = cards[cardName];
 
-  document.getElementById("leftName").innerText = bucket[leftIdx];
-  document.getElementById("rightName").innerText = bucket[rightIdx];
-  document.getElementById("leftImg").src = cards[bucket[leftIdx]].image || "";
-  document.getElementById("rightImg").src = cards[bucket[rightIdx]].image || "";
+  document.getElementById("cardName").innerText = toTitleCase(cardName);
+  document.getElementById("cardType").innerText = card.typeLine || "";
+  document.getElementById("cardImg").src = card.image || "";
+  
+  const currentRating = ratings[cardName];
+  document.getElementById("cardRating").innerText = currentRating || "U";
+  
+  updateProgress();
+  updateRatingButtons();
 }
 
-async function pick(winnerIdx) {
-  const bucketKey = bucketKeys[currentBucketIdx];
-  const bucket = buckets[bucketKey];
-
-  const loserIdx = winnerIdx === 0 ? 1 : 0;
-  const winner = bucket[winnerIdx === 0 ? leftIdx : rightIdx];
-  const loser = bucket[loserIdx === 0 ? leftIdx : rightIdx];
-
-  pairHistory.push({ winner, loser, bucketKey, leftIdx, rightIdx });
-
-  await fetch("/compare", {
-    method: "POST",
-    headers: {"Content-Type":"application/json"},
-    body: JSON.stringify({ winner, loser })
-  });
-
-  nextPair();
+function updateProgress() {
+  const ratedCount = Object.values(ratings).filter(r => r !== null && r !== undefined).length;
+  const totalCount = Object.keys(cards).length;
+  document.getElementById("progress").innerText = `${ratedCount} / ${totalCount}`;
 }
 
-function nextPair() {
-  const bucketKey = bucketKeys[currentBucketIdx];
-  const bucket = buckets[bucketKey];
+function updateRatingButtons() {
+  const currentCardName = cardList[findNextCard()];
+  const currentRating = currentCardName ? ratings[currentCardName] : null;
 
-  leftIdx += 1;
-  rightIdx += 1;
-  if (rightIdx >= bucket.length) {
-    currentBucketIdx += 1;
-    if (currentBucketIdx >= bucketKeys.length) {
-      currentBucketIdx = 0; // loop over buckets
+  ['S', 'A', 'B', 'C', 'D', 'E'].forEach(grade => {
+    const btn = document.querySelector(`.rating-btn:nth-child(${grade === 'S' ? 1 : grade === 'A' ? 2 : grade === 'B' ? 3 : grade === 'C' ? 4 : grade === 'D' ? 5 : 6})`); 
+    if (currentRating === grade) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
     }
-    shuffleBucket(bucketKeys[currentBucketIdx]);
-  }
-  showPair();
+  });
 }
 
-function prev() {
-  if (!pairHistory.length) return;
-  const last = pairHistory.pop();
-  currentBucketIdx = bucketKeys.indexOf(last.bucketKey);
-  shuffleBucket(last.bucketKey);
-  leftIdx = last.leftIdx;
-  rightIdx = last.rightIdx;
-  showPair();
+function updateStatsList() {
+  const statsList = document.getElementById("statsList");
+  statsList.innerHTML = "";
+  stats.forEach(s => {
+    const div = document.createElement("div");
+    div.className = "stat-group";
+    div.innerText = `${s.type} ${s.color}: ${s.rated}/${s.total}`;
+    
+    const progressBar = document.createElement("div");
+    progressBar.className = "progress-bar";
+    const progressFill = document.createElement("div");
+    progressFill.className = "progress-fill";
+    progressFill.style.width = `${(s.rated / s.total) * 100}%`;
+    progressBar.appendChild(progressFill);
+    div.appendChild(progressBar);
+    
+    statsList.appendChild(div);
+  });
+}
+
+function updateUI() {
+  showCard();
+  updateStatsList();
+}
+
+async function rate(grade) {
+  const idx = findNextCard();
+  const cardName = cardList[idx];
+  ratingHistory.push({ cardName, grade: ratings[cardName] });
+  ratings[cardName] = grade;
+
+  // Show the rating immediately
+  document.getElementById("cardRating").innerText = grade;
+
+  const res = await fetch("/rate", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ card: cardName, grade })
+  });
+  const data = await res.json();
+  stats = data.stats;
+
+  // Move to next card after a short delay
+  setTimeout(() => {
+    currentIdx++;
+    updateUI();
+  }, 500);
 }
 
 function skip() {
-  nextPair();
+  currentIdx++;
+  updateUI();
 }
 
-document.getElementById("leftImg").addEventListener("click", () => pick(0));
-document.getElementById("rightImg").addEventListener("click", () => pick(1));
+function prev() {
+  if (!ratingHistory.length) return;
+  const last = ratingHistory.pop();
+  ratings[last.cardName] = last.grade;
+  currentIdx = cardList.indexOf(last.cardName);
+  updateUI();
+}
+
+function setupKeyboardShortcuts() {
+  document.addEventListener("keydown", (e) => {
+    if (KEY_TO_GRADE[e.key]) {
+      const grade = KEY_TO_GRADE[e.key];
+      rate(grade);
+    }
+  });
+}
 
 init();

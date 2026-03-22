@@ -24,6 +24,8 @@ class ScryfallCardDetails(BaseModel):
     prices: Prices | None = None
     image_uris: ImageURIs | None = None
     released_at: str
+    cmc: float
+    type_line: str
 
     def to_dict(self) -> Dict[str, Any]:
         return self.model_dump()
