@@ -7,6 +7,23 @@ let currentIdx = 0;
 const GRADE_TO_KEY = { 'S': '1', 'A': '2', 'B': '3', 'C': '4', 'D': '5', 'E': '6' };
 const KEY_TO_GRADE = { '1': 'S', '2': 'A', '3': 'B', '4': 'C', '5': 'D', '6': 'E' };
 
+const manaIcons = {
+  W: "https://svgs.scryfall.io/card-symbols/W.svg",
+  U: "https://svgs.scryfall.io/card-symbols/U.svg",
+  B: "https://svgs.scryfall.io/card-symbols/B.svg",
+  R: "https://svgs.scryfall.io/card-symbols/R.svg",
+  G: "https://svgs.scryfall.io/card-symbols/G.svg",
+  C: "https://svgs.scryfall.io/card-symbols/C.svg"
+};
+
+function getManaHTML(colorString) {
+  if (!colorString) return "";
+
+  return colorString.split("").map(c => {
+    return `<img class="mana-icon" src="${manaIcons[c]}" />`;
+  }).join("");
+}
+
 const colorOrder = {
   W: 0,
   U: 1,
@@ -160,9 +177,16 @@ function updateStatsList() {
   stats.forEach(s => {
     const div = document.createElement("div");
     div.className = "stat-group";
-    div.innerText = `${s.type} ${s.color}: ${s.rated}/${s.total}`;
+
+    const manaHTML = getManaHTML(s.color);
+
+    div.innerHTML = `
+      ${manaHTML}
+      ${s.type}: ${s.rated}/${s.total}
+    `;
     
     div.style.cursor = "pointer";
+
     div.addEventListener("click", () => {
       jumpToUnratedCard(s.type, s.color);
     });
