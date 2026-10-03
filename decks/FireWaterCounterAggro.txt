@@ -1,0 +1,51 @@
+# Mainboard
+1 Faerie Seer
+1 Stratus Dancer
+1 Mu Yanling, Sky Dancer
+1 Control Magic
+1 Voracious Greatshark
+1 Wandering Fumarole
+1 Terramorphic Expanse
+1 Evolving Wilds
+1 Zurgo Bellstriker
+1 Falkenrath Gorger
+1 Ahn-Crop Crasher
+1 Shatterskull Charger
+1 Renegade Freighter
+1 Fleetwheel Cruiser
+1 Magmatic Sinkhole
+1 Goblin Bombardment
+1 Selesnya Signet
+1 Mana Leak
+1 Memory Lapse
+1 Lightning Strike
+1 Izzet Signet
+1 Magma Jet
+1 Incubation // Incongruity
+1 Silver-Inlaid Dagger
+1 Shimmerdrift Vale
+1 Agonizing Remorse
+1 Carrion Feeder
+6 Island
+2 Swamp
+5 Mountain
+
+# Sideboard
+1 Treasure Cruise
+1 Paradise Druid
+1 Thraben Inspector
+1 Edge of Autumn
+1 Den Protector
+1 Fyndhorn Elves
+1 Wall of Roots
+1 Winding Way
+1 Seeker of the Way
+1 Imposing Sovereign
+1 Verdurous Gearhulk
+1 Braids, Cabal Minion
+1 Inscription of Abundance
+1 Tangled Florahedron
+1 Hooting Mandrills
+1 Syr Konrad, the Grim
+1 Rise from the Tides
+1 Viscera Seer

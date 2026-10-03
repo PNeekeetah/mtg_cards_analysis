@@ -3,6 +3,7 @@ const express = require("express");
 const { chain } = require("stream-chain");
 const { parser } = require("stream-json");
 const { streamArray } = require("stream-json/streamers/stream-array.js");
+const { Readable } = require("stream");
 
 const app = express();
 app.use(express.json());
@@ -58,7 +59,7 @@ async function loadCardData() {
   return new Promise((resolve, reject) => {
     const cards = {};
     const pipeline = chain([
-      fs.createReadStream(PRICE_FILE),
+        Readable.from([fs.readFileSync(PRICE_FILE, "utf8")]),
       parser(),
       streamArray()
     ]);
@@ -157,5 +158,5 @@ function buildCardStats(cards, ratings) {
   });
 
   console.log("Server starting on port 3000");
-  app.listen(3000, () => console.log("Server running: http://localhost:3000"));
+  app.listen(8000, () => console.log("Server running: http://localhost:8000"));
 })();
