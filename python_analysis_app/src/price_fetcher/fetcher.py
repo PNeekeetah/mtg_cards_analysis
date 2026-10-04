@@ -1,7 +1,7 @@
 from datetime import date
 import os
-import json
 import requests
+import gzip
 
 SCRYFALL_BULK_URL = "https://api.scryfall.com/bulk-data"  # All the cards that are out there
 PRICE_DIR = "prices"
@@ -52,6 +52,7 @@ class PriceFetcher:
         """
         ensure_dir(self.price_dir)
         today_file = os.path.join(self.price_dir, f"prices_{today_suffix()}.json")
+        today_file_gzip = os.path.join(self.price_dir, f"prices_{today_suffix()}.json.gz")
 
         if os.path.exists(today_file):
             return today_file
@@ -66,7 +67,7 @@ class PriceFetcher:
 
         # Past this point, we know it doesn't exist, so we need to fetch it.
 
-        response = self.session.get(self.base_url)
+        response = self.session.get(self.base_url, headers={"User-Agent": "PriceFetcher/1.0"})
         if response.status_code != 200:
             raise APIError(
                 f"Failed to fetch bulk data: {response.status_code}", response.status_code
@@ -76,18 +77,24 @@ class PriceFetcher:
 
         default_cards = next(obj for obj in bulk_data["data"] if obj.get("name") == collection_name)
 
-        download_uri = default_cards["download_uri"]
+        download_uri = default_cards["jsonl_download_uri"]
 
-        cards_response = self.session.get(download_uri)
+        cards_response = self.session.get(download_uri, headers={"User-Agent": "PriceFetcher/1.0"}, stream=True)
         if cards_response.status_code != 200:
             raise APIError(
                 f"Failed to fetch default cards data: {cards_response.status_code}",
                 cards_response.status_code,
             )
 
-        cards = cards_response.json()
+        with open(today_file_gzip, 'wb') as f:
+            for chunk in cards_response.raw.stream(1024, decode_content=False):
+                if chunk:
+                    f.write(chunk)
 
-        with open(today_file, "w", encoding="utf-8") as f:
-            json.dump(cards, f)
+        with gzip.open(today_file_gzip, 'rb') as file:
+            with open(today_file, 'wb')  as out_file:
+                out_file.write(file.read()) 
+
+        os.remove(today_file_gzip)
 
         return today_file

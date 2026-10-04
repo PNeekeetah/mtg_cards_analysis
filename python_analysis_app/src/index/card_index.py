@@ -41,9 +41,11 @@ class CardIndex:
         card_names: Set of card names to include in the reduced index.
         """
         reduced_index = CardIndex()
-
-        with open(price_file, "rb") as f:
-            cards = orjson.loads(f.read())
+        cards = []
+        with open(price_file, "r") as f:
+            json_list = list(f)
+            for line in json_list:
+                cards.append(orjson.loads(line))
 
         for card in cards:
             if card["name"].lower() in card_names_filter:
@@ -57,9 +59,11 @@ class CardIndex:
         Utility to build a card index from the file.
         """
         card_index = CardIndex()
-
-        with open(price_file, "rb") as f:
-            cards = orjson.loads(f.read())
+        cards = []
+        with open(price_file, "r") as f:
+            json_list = list(f)
+            for line in json_list:
+                cards.append(orjson.loads(line))
 
         for card in cards:
             card_index.add_card(ScryfallCardDetails(**card))
