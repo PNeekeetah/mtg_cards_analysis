@@ -1,0 +1,32 @@
+# Mainboard
+1 Environmental Scientist
+1 Galactic Wayfarer
+1 Terramorph
+1 Prismatic Undercurrents
+1 Yavimaya Elder
+1 Seek the Wilds
+1 Market Festival
+1 Vibrance
+1 Dawnsire, Sunstar Dreadnought
+1 Boros Reckoner
+1 Emergency Weld
+1 Paramecia Coloniex
+1 Anticausal Vestige
+1 Opt
+1 Deduce
+1 Plunder the Trollshaws
+1 Fanatical Firebrand
+1 Counterspell
+1 Silumgar's Command
+1 Sinister Sabotage
+1 You Find The Villains' Lair
+1 Wren's Run Hydra
+1 Waker of the Wilds
+1 Rugged Highlands
+1 Raging Ravine
+1 Hobbit Hole
+1 Terramorphic Expanse
+5 Forest
+3 Island
+3 Mountain
+2 Swamp
