@@ -77,16 +77,22 @@ function getColorKey(colors) {
     .join("");
 }
 
-function sortCards(cards) {
+function sortCards(cards, ratings) {
   return Object.keys(cards).sort((a, b) => {
     const cardA = cards[a];
     const cardB = cards[b];
-    
+    const ratingA = ratings[a] || "U";
+    const ratingB = ratings[b] || "U";
+
     const colorA = getColorKey(cardA.colors);
     const colorB = getColorKey(cardB.colors);
 
     if (colorA !== colorB) {
       return (colorOrder[colorA] ?? 99) - (colorOrder[colorB] ?? 99);
+    }
+
+    if (ratingA !== ratingB) {
+      return parseInt(GRADE_TO_KEY[ratingA] ?? 99) - parseInt(GRADE_TO_KEY[ratingB] ?? 99);
     }
 
     if (cardA.type !== cardB.type) {
@@ -109,7 +115,7 @@ async function init() {
   cards = data.cards;
   stats = data.stats;
 
-  cardList = sortCards(cards);
+  cardList = sortCards(cards, ratings);
   currentIdx = 0;
   
   updateUI();
